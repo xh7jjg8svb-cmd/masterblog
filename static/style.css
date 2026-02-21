@@ -45,3 +45,17 @@ h1 {
 .add-form button:hover {
     background-color: #0056b3;
 }
+
+/* Löschen-Button */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #b02a37;
+}

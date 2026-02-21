@@ -16,6 +16,11 @@
             <h2>{{ post.title }}</h2>
             <p><strong>Autor:</strong> {{ post.author }}</p>
             <p>{{ post.content }}</p>
+
+            <!-- Löschen-Button -->
+            <form action="{{ url_for('delete', post_id=post.id) }}" method="GET" style="display:inline;">
+                <button type="submit" class="delete-button">🗑️ Löschen</button>
+            </form>
         </div>
         <hr>
     {% else %}
