@@ -16,6 +16,12 @@
             <h2>{{ post.title }}</h2>
             <p><strong>Autor:</strong> {{ post.author }}</p>
             <p>{{ post.content }}</p>
+            <p>Likes: {{ post.likes or 0 }}</p>
+
+            <!-- Like-Button -->
+            <form action="{{ url_for('like', post_id=post.id) }}" method="GET" style="display:inline;">
+                <button type="submit" class="like-button">❤️ Like</button>
+            </form>
 
             <!-- Bearbeiten-Button -->
             <form action="{{ url_for('update', post_id=post.id) }}" method="GET" style="display:inline;">

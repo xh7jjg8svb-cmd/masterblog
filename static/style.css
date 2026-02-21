@@ -74,3 +74,18 @@ h1 {
 .edit-button:hover {
     background-color: #e0a800;
 }
+
+/* Like-Button */
+.like-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.like-button:hover {
+    background-color: #218838;
+}
